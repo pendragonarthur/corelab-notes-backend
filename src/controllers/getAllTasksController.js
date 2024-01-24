@@ -1,6 +1,6 @@
 import taskModel from '../db/taskSchema.js'
 
-export default class getAllTasks {
+export default class getAllNotes {
   async get(req, res) {
     try {
       // Find all tasks and sort by isFavorite (favorites first)

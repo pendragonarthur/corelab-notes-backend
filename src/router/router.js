@@ -1,7 +1,7 @@
 import express from 'express'
 import postTaskController from '../controllers/postTaskController.js'
 import getTaskByTitleController from '../controllers/getTaskByTitleController.js'
-import getAllTasks from '../controllers/getAllTasksController.js'
+import getAllNotes from '../controllers/getAllTasksController.js'
 import updateTaskController from '../controllers/updateTaskController.js'
 import deleteTaskController from '../controllers/deleteTaskController.js'
 import getTasksByColorController from '../controllers/getTasksByColorController.js'
@@ -17,7 +17,7 @@ router.post('/postTask', new postTaskController().post)
 router.get('/getTaskByTitle/:title', new getTaskByTitleController().get)
 
 // Get all tasks route
-router.get('/getAllTasks', new getAllTasks().get)
+router.get('/getAllNotes', new getAllNotes().get)
 
 // Get tasks by color
 router.get('/getTasksByColor/:taskColor', new getTasksByColorController().get)
